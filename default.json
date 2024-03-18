@@ -23,5 +23,5 @@
   ],
   "labels": ["dependencies"],
   "rangeStrategy": "bump",
-  "ignoreDeps": ["node"]
+  "ignoreDeps": ["node", "@types/vscode", "vscode"]
 }
