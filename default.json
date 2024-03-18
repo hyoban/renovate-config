@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended", "schedule:weekly"],
+  "extends": ["config:recommended"],
   "packageRules": [
     {
       "groupName": "all non-major dependencies",
@@ -23,5 +23,7 @@
   ],
   "labels": ["dependencies"],
   "rangeStrategy": "bump",
-  "ignoreDeps": ["node", "@types/vscode", "vscode"]
+  "ignoreDeps": ["node", "@types/vscode", "vscode"],
+  "timezone": "Asia/Shanghai",
+  "schedule": ["before 5am every weekend"]
 }
