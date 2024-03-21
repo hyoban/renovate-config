@@ -3,27 +3,11 @@
   "extends": ["config:recommended", ":semanticCommits"],
   "packageRules": [
     {
-      "groupName": "all non-major dependencies",
-      "groupSlug": "all-non-major",
-      "matchPackagePatterns": ["*"],
-      "matchCurrentVersion": ">= 1.0.0",
-      "matchUpdateTypes": ["minor", "patch"]
-    },
-    {
-      "groupName": "all non-major dependencies",
-      "groupSlug": "all-non-major",
-      "matchPackagePatterns": ["*"],
-      "matchCurrentVersion": "< 1.0.0",
-      "matchUpdateTypes": ["patch"]
-    },
-    {
       "depTypeList": ["peerDependencies"],
       "enabled": false
     }
   ],
   "labels": ["dependencies"],
   "rangeStrategy": "bump",
-  "ignoreDeps": ["node", "@types/vscode", "vscode"],
-  "timezone": "Asia/Shanghai",
-  "schedule": ["before 5am every weekend"]
+  "ignoreDeps": ["node", "@types/vscode", "vscode"]
 }
